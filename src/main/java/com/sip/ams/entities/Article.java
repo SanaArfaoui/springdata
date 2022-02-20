@@ -46,6 +46,18 @@ return price;
 public void setPrice(float price) {
 this.price = price;
 }
+
+
+@Column(name = "picture")
+private String picture;
+
+public void setPicture(String picture) {
+	this.picture = picture;
+	}
+	public String getPicture() {
+	return picture;
+	}
+	
 /**** Many To One ****/
 @ManyToOne(fetch = FetchType.LAZY, optional = false)
  @JoinColumn(name = "provider_id", nullable = false)
